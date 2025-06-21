@@ -1,0 +1,13 @@
+langchain-openai
+langchain
+langchain-community
+sentence-transformers
+torch
+transformers
+langchain-qdrant
+pdfplumber
+fastapi
+langgraph
+langchain-qdrant
+langchain-cli
+pypdf
