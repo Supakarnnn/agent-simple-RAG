@@ -1,6 +1,7 @@
 langchain-openai
 langchain
 langchain-community
+langchain_huggingface
 sentence-transformers
 torch
 transformers
