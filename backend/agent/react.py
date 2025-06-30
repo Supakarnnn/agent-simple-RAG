@@ -14,6 +14,7 @@ def react_agent(llm : ChatOpenAI , tools : list, system_prompt : str | None = No
         tools_by_name = {tool.name: tool for tool in tools}
         messages = []
         for tool_call in state["messages"][-1].tool_calls:
+            # print("tool_call.args =", tool_call["args"])
             tool = tools_by_name[tool_call["name"]]
             result = await tool.ainvoke(tool_call["args"]) 
 

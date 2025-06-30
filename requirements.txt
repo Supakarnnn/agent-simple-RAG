@@ -12,3 +12,5 @@ langgraph
 langchain-qdrant
 langchain-cli
 pypdf
+pymilvus
+langchain_milvus

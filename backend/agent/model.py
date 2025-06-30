@@ -7,11 +7,17 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 dotenv.load_dotenv()
 
+# llm = ChatOpenAI(
+#    api_key=os.environ.get("LLM_API"),
+#    base_url='https://api.opentyphoon.ai/v1',
+#    model='typhoon-v2.1-12b-instruct',
+#    temperature=0
+# )
+
 llm = ChatOpenAI(
-   api_key=os.environ.get("LLM_API"),
-   base_url='https://api.opentyphoon.ai/v1',
-   model='typhoon-v2.1-12b-instruct',
-   temperature=0
+   api_key=os.environ.get("OPENAI_KEY"),
+   model='gpt-4o-mini',
+   temperature=0.4
 )
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
